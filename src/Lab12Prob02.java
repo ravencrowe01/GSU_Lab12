@@ -1,5 +1,5 @@
 /**
-* File: Lab12Prob01.java
+* File: Lab12Prob02.java
 * Class: CSCI 1302
 * Author: Raven Crowe
 * Created on: Jun 6, 2016
@@ -13,12 +13,15 @@ public class Lab12Prob02 {
 	}
 	
 	public static String reverseString (String value) {
+		// Return string length 1
 		if (value.length() == 1) {
 			return value;
 		}
 		
+		// Get the substring
 		String sub = value.substring(0, value.length() - 1);
 		
+		// Return the reversed string
 		return value.charAt(value.length () -1) + reverseString (sub);
 	}
 }

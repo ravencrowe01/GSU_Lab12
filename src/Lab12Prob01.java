@@ -16,6 +16,7 @@ public class Lab12Prob01 {
 	}
 	
 	public static int recursiveAbstract (int number) {
+		// Base cases
 		if (number == 0) {
 			return 1;
 		}
@@ -28,6 +29,7 @@ public class Lab12Prob01 {
 			return 4;
 		}
 		
+		// Do the function's maths
 		return recursiveAbstract(number - 3) * (recursiveAbstract(number - 2)- recursiveAbstract (number - 1));
 	}
 }
